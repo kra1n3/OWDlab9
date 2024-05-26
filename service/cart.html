@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotus - Магазин квітів</title>
+    <meta
+      name="description"
+      content="Замовляйте квіти та букети в магазині Lotus і порадуйте себе та ваших близьких чудовими квітковими композиціями!"
+    />
+    <meta
+      name="keywords"
+      content="квіти, квітів, букети квітів, білі троянди, доставка квітів, купити квіти, магазин квітів, квіти в коробці, квіти на день народження, квіти букети, гарні букети квітів"
+    />
+    <meta name="author" content="Lotus - букети на будь-який смак!" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="32x32"
+      href="../favico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="16x16"
+      href="../favico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favico/site.webmanifest" />
+    <link rel="preload" href="../css/style.css" as="style" />
+    <link rel="preload" href="../js/card.js" as="script" />
+    <link rel="preload" href="../images/icons/logo.svg" as="image" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html" class="header__logo">
+        <img src="../images/icons/logo.svg" alt="Lotus logo" />
+      </a>
+      <nav class="navbar">
+        <a href="../index.html" class="navbar__link">Головна</a>
+        <a href="../product.html" class="navbar__link">Асортимент</a>
+        <a href="../contact.html" class="navbar__link">Зв'язок</a>
+        <a href="../about.html" class="navbar__link">Про нас</a>
+        <a href="../service/cart.html" class="navbar__link">
+          <img
+            src="../images/icons/cart.svg"
+            class="navbar__icon"
+            alt="Shop Cart"
+          />
+        </a>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="cart" class="cart">
+        <h2 class="cart__title">Ваш кошик:</h2>
+        <div class="cart__container" id="cartContainer"></div>
+        <div class="buy">
+          <button onclick="checkout()" class="cart__button">
+            Оформити замовлення
+          </button>
+        </div>
+        <div class="link">
+          <a href="./orders.html" class="cart__link">Поточні замовлення</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copy">&copy; 2024 Lotus. Всі права захищені.</p>
+    </footer>
+  </body>
+  <script src="../js/card.js"></script>
+</html>

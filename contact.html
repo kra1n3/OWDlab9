@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotus - Магазин квітів</title>
+    <meta
+      name="description"
+      content="Замовляйте квіти та букети в магазині Lotus і порадуйте себе та ваших близьких чудовими квітковими композиціями!"
+    />
+    <meta
+      name="keywords"
+      content="квіти, квітів, букети квітів, білі троянди, доставка квітів, купити квіти, магазин квітів, квіти в коробці, квіти на день народження, квіти букети, гарні букети квітів"
+    />
+    <meta name="author" content="Lotus - букети на будь-який смак!" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="32x32"
+      href="./favico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="16x16"
+      href="./favico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favico/site.webmanifest" />
+    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="preload" href="./js/script.js" as="script" />
+    <link rel="preload" href="./images/icons/logo.svg" as="image" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="header__logo">
+        <img src="./images/icons/logo.svg" alt="Lotus logo" />
+      </a>
+      <nav class="navbar">
+        <a href="./index.html" class="navbar__link">Головна</a>
+        <a href="./product.html" class="navbar__link">Асортимент</a>
+        <a href="./contact.html" class="navbar__link navbar__link-active"
+          >Зв'язок</a
+        >
+        <a href="./about.html" class="navbar__link">Про нас</a>
+        <a href="./service/cart.html" class="navbar__link">
+          <img
+            src="./images/icons/cart.svg"
+            class="navbar__icon"
+            alt="Shop Cart"
+          />
+        </a>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="contact-form">
+        <h2 class="contact-form__title">Зв'язок</h2>
+        <div class="contact-form__container">
+          <form class="contact-form__form" action="#" method="post">
+            <div class="contact-form__group">
+              <label class="contact-form__label" for="name">Ім'я</label>
+              <input
+                class="contact-form__input"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="contact-form__group">
+              <label class="contact-form__label" for="email">Пошта</label>
+              <input
+                class="contact-form__input"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="contact-form__group">
+              <label class="contact-form__label" for="message"
+                >Повідомлення</label
+              >
+              <textarea
+                class="contact-form__input contact-form__input--textarea"
+                id="message"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <div class="contact-form__group radio">
+              <label class="contact-form__label">Стать:</label>
+              <div class="contact-form__radio">
+                <input type="radio" id="radio1" name="radio" value="radio1" />
+                <label for="radio1">Пестик</label>
+              </div>
+              <div class="contact-form__radio">
+                <input type="radio" id="radio2" name="radio" value="radio2" />
+                <label for="radio2">Тичинка</label>
+              </div>
+            </div>
+            <div class="contact-form__group contact-form__group--submit">
+              <button class="contact-form__button" type="submit">
+                Надіслати
+              </button>
+            </div>
+          </form>
+          <div class="contact-form__photo">
+            <img
+              src="./images/bouquets4.webp"
+              alt="Flower Shop"
+              class="contact-form__image"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__section">
+        <div class="footer__info">
+          <h2 class="footer__title">Інформація</h2>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="./about.html" class="footer__link">Про нас</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="./about.html" class="footer__link"
+                >Інформація про доставку</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="./about.html" class="footer__link"
+                >Політика конфіденційності</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="./about.html" class="footer__link">Правила та умови</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="./about.html" class="footer__link">Чому ми?</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h2 class="footer__title">Контакти</h2>
+          <address class="footer__address">
+            <p class="footer__address-text">
+              <img
+                src="./images/icons/map.svg"
+                alt="Location"
+                class="footer__icon"
+              />Khmel'nyts'ke Hwy, 95, Vinnytsia, Vinnytsia Oblast, 21000
+            </p>
+          </address>
+          <a href="tel:+0432 560 848" class="footer__phone">
+            <p class="footer__phone-text">
+              <img
+                src="./images/icons/phone.svg"
+                alt="Phone number"
+                class="footer__icon"
+              />069 1234567
+            </p>
+          </a>
+        </div>
+      </section>
+      <p class="footer__copy">&copy; 2024 Lotus. Всі права захищені.</p>
+    </footer>
+  </body>
+</html>

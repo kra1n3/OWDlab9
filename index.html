@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotus - Магазин квітів</title>
+    <meta
+      name="description"
+      content="Замовляйте квіти та букети в магазині Lotus і порадуйте себе та ваших близьких чудовими квітковими композиціями!"
+    />
+    <meta
+      name="keywords"
+      content="квіти, квітів, букети квітів, білі троянди, доставка квітів, купити квіти, магазин квітів, квіти в коробці, квіти на день народження, квіти букети, гарні букети квітів"
+    />
+    <meta name="author" content="Lotus - букети на будь-який смак!" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="32x32"
+      href="./favico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="16x16"
+      href="./favico/favicon-16x16.png"
+    />
+    <style>
+      .promo__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+    <link rel="manifest" href="./favico/site.webmanifest" />
+    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="preload" href="./js/script.js" as="script" />
+    <link rel="preload" href="./js/paralax.js" as="script" />
+    <link rel="preload" href="./images/icons/logo.svg" as="image" />
+    <link rel="preload" href="./images/flower-banner.webp" as="image" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="header__logo">
+        <img src="./images/icons/logo.svg" alt="Lotus logo" />
+      </a>
+      <nav class="navbar">
+        <a href="./index.html" class="navbar__link navbar__link-active"
+          >Головна</a
+        >
+        <a href="./product.html" class="navbar__link">Асортимент</a>
+        <a href="./contact.html" class="navbar__link">Зв'язок</a>
+        <a href="./about.html" class="navbar__link">Про нас</a>
+        <a href="./service/cart.html" class="navbar__link">
+          <img
+            src="./images/icons/cart.svg"
+            class="navbar__icon"
+            alt="Shop Cart"
+          />
+        </a>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="promo">
+        <div class="promo__body">
+          <div class="promo__subtitle"><h2>Втілення краси</h2></div>
+          <div class="promo__title title"><h1>Квіти</h1></div>
+          <a href="#offers" class="promo__arrow">
+            <img src="./images/icons/arrow-down.svg" alt="Scroll Down" />
+          </a>
+        </div>
+      </section>
+      <section class="service">
+        <div class="service__row flower"></div>
+        <div class="service__row collection">
+          <h2 class="service__title">Нова літня колекція</h2>
+          <p class="service__text">
+            Освіжи свій літній настрій з нашою новою колекцією квіткових
+            букетів! Вибери найяскравіші кольори літа та поринь у море квіткової
+            краси. Зроби свій дім ще затишнішим та святковішим з нашими чудовими
+            композиціями. Замовляй прямо зараз!
+          </p>
+          <p class="service__text"><span>3599 &#8372;</span></p>
+        </div>
+        <div class="service__row services">
+          <h2 class="service__title">Наші послуги та доставка</h2>
+          <p class="service__text">
+            Зроби життя яскравішим з нашими букетами! Надсилай квіти своїм
+            близьким та коханим, вибираючи з нашого широкого асортименту. Ми
+            пропонуємо швидку та надійну доставку, щоб твої квіти завжди дійшли
+            вчасно та свіжими. Оздоби свій дім або зроби приємний сюрприз.
+          </p>
+          <p class="service__text">
+            <span>Замовляй квіти у нас прямо зараз!</span>
+          </p>
+          <div class="service__links">
+            <a href="./service/orders.html" class="service__link"
+              ><img src="./images/icons/orders.svg" alt="Order"
+            /></a>
+            <a href="./service/cart.html" class="service__link"
+              ><img src="./images/icons/cart.svg" alt="Shop Cart"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section class="cards">
+        <h2 class="cards__heading">Спеціальна</h2>
+        <p class="cards__subheading">пропозиція!</p>
+        <div class="cards__wrapper">
+          <div class="card card--one">
+            <div class="card__bg"></div>
+            <img
+              class="card__img"
+              src="./images/fl1.webp"
+              alt="Special offer 1"
+              loading="lazy"
+            />
+            <div class="card__text">
+              <p class="card__title">759 &#8372;</p>
+            </div>
+          </div>
+          <div class="card card--two">
+            <div class="card__bg"></div>
+            <img
+              class="card__img"
+              src="./images/fl2.webp"
+              alt="Special offer 2"
+              loading="lazy"
+            />
+            <div class="card__text">
+              <p class="card__title">568 &#8372;</p>
+            </div>
+          </div>
+          <div class="card card--three">
+            <div class="card__bg"></div>
+            <img
+              class="card__img"
+              src="./images/fl3.webp"
+              alt="Special offer 3"
+              loading="lazy"
+            />
+            <div class="card__text">
+              <p class="card__title">1299 &#8372;</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="offers" class="offers">
+        <h2 class="offers__title">Щоденні пропозиції :</h2>
+        <div class="offers__container">
+          <div class="offers__item" data-id="1">
+            <div class="offers__item-content">
+              <img src="./images/offer1.webp" alt="Offer 1" />
+              <div class="info">
+                <h3>Романтична ніжність</h3>
+                <p>
+                  Погрузися в атмосферу кохання та ніжності з цим чарівним
+                  букетом. Кожен квітковий горошок виблискує своєю красою,
+                  створюючи неповторний образ ніжності та романтики.
+                </p>
+              </div>
+            </div>
+            <div class="offers__prices">
+              <p class="offers__price">1000 &#8372;</p>
+              <p class="offers__price">1420 &#8372;</p>
+            </div>
+            <button
+              class="offers__button"
+              onclick="addToCart(1, 'Романтична ніжність', 1000)"
+            >
+              <img src="./images/icons/cart.svg" alt="Shop Cart" />Замовити
+            </button>
+          </div>
+          <div class="offers__item" data-id="2">
+            <div class="offers__item-content">
+              <img src="./images/offer2.webp" alt="Offer 2" />
+              <div class="info">
+                <h3>Сонячна енергія</h3>
+                <p>
+                  Принеси у свій дім промінь сонця з цим яскравим букетом.
+                  Яскраві кольори квітів додадуть тобі енергії та позитиву на
+                  цілий день. Насолоджуйся теплом літа у кожній квітці!
+                </p>
+              </div>
+            </div>
+            <div class="offers__prices">
+              <p class="offers__price">778 &#8372;</p>
+              <p class="offers__price">961 &#8372;</p>
+            </div>
+            <button
+              class="offers__button"
+              onclick="addToCart(2, 'Сонячна енергія', 778)"
+            >
+              <img src="./images/icons/cart.svg" alt="Shop Cart" />Замовити
+            </button>
+          </div>
+          <div class="offers__item" data-id="3">
+            <div class="offers__item-content">
+              <img src="./images/offer3.webp" alt="Offer 3" />
+              <div class="info">
+                <h3>Літній бриз</h3>
+                <p>
+                  Відчуй свіжість літнього ранку з цим вишуканим букетом. Квіти,
+                  неначе зібрані прямо з сонячного поля, принесуть в твій дім
+                  аромат літнього бризу та радість від кожного дня.
+                </p>
+              </div>
+            </div>
+            <div class="offers__prices">
+              <p class="offers__price">1048 &#8372;</p>
+              <p class="offers__price">1330 &#8372;</p>
+            </div>
+            <button
+              class="offers__button"
+              onclick="addToCart(3, 'Літній бриз', 1048)"
+            >
+              <img src="./images/icons/cart.svg" alt="Shop Cart" />Замовити
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="wedding-bouquets">
+        <h2 class="wedding-bouquets__title">Весільні букети</h2>
+        <p class="wedding-bouquets__description">
+          Створи мить вічності з нашими весільними букетами! Кожна квіткова
+          композиція - це втілення кохання та краси, яка підкреслить
+          унікальність твого особливого дня. Обери ідеальний букет, щоб зробити
+          своє весілля ще більш незабутнім та чарівним. Замовляй прямо зараз та
+          створи казку разом з Lotus!
+        </p>
+        <button class="wedding-bouquets__button wedding-bouquets__button--left">
+          <img
+            src="./images/icons/arrow-left.svg"
+            alt="Left Arrow"
+            class="wedding-bouquets__icon"
+          />
+        </button>
+        <button
+          class="wedding-bouquets__button wedding-bouquets__button--right"
+        >
+          <img
+            src="./images/icons/arrow-right.svg"
+            alt="Right Arrow"
+            class="wedding-bouquets__icon"
+          />
+        </button>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__section">
+        <div class="footer__info">
+          <h2 class="footer__title">Інформація</h2>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="./about.html" class="footer__link">Про нас</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="./about.html" class="footer__link"
+                >Інформація про доставку</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="./about.html" class="footer__link"
+                >Політика конфіденційності</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="./about.html" class="footer__link">Правила та умови</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="./about.html" class="footer__link">Чому ми?</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h2 class="footer__title">Контакти</h2>
+          <address class="footer__address">
+            <p class="footer__address-text">
+              <img
+                src="./images/icons/map.svg"
+                alt="Location"
+                class="footer__icon"
+              />Khmel'nyts'ke Hwy, 95, Vinnytsia, Vinnytsia Oblast, 21000
+            </p>
+          </address>
+          <a href="tel:+0432 560 848" class="footer__phone">
+            <p class="footer__phone-text">
+              <img
+                src="./images/icons/phone.svg"
+                alt="Phone number"
+                class="footer__icon"
+              />069 1234567
+            </p>
+          </a>
+        </div>
+      </section>
+      <p class="footer__copy">&copy; 2024 Lotus. Всі права захищені.</p>
+    </footer>
+    <script>
+      window.addEventListener("load", function () {
+        const promoBody = document.querySelector(".promo__body");
+        promoBody.style.background =
+          "url('./images/flower-banner.webp') no-repeat center center/cover";
+      });
+      function addToCart(id, name, price) {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const itemIndex = cart.findIndex((item) => item.id === id);
+
+        if (itemIndex > -1) {
+          cart[itemIndex].quantity += 1;
+        } else {
+          cart.push({ id, name, price, quantity: 1 });
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert(`${name} додано до кошика!`);
+      }
+    </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/paralax.js"></script>
+  </body>
+</html>

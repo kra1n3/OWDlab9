@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /service/
+Allow: /
+
+Sitemap: https://kra1n3.github.io/OWDlab9/sitemap.xml
+
